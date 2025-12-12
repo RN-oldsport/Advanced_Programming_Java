@@ -50,7 +50,10 @@ public class DynamicArray<Type> {
         }
     }
 
-    public void remove(int index) {
+    public void remove(int index) throws IllegalAccessException {
+        if (isEmpty()) {
+            throw new IllegalAccessException("Array is empty");
+        }
         shiftLeftFrom(index);
         this.array[size - 1] = null;
         size--;
