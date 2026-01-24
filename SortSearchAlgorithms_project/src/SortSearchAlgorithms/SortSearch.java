@@ -102,4 +102,33 @@ public class SortSearch {
 
         return -1;
     }
+
+
+//    public static void mergeSort(int[] array, int start, int end) {
+//        int mid = (end - start) / 2 + start;
+//
+//        mergeSort(array, start, mid);
+//        mergeSort(array, mid + 1, end);
+//
+//        merge(leftArray, rightArray);
+//    }
+//
+//    private static int[] merge(int[] leftArray, int[] rightArray) {
+//        int lLen = leftArray.length;
+//        int rLen = rightArray.length;
+//        int[] temp = new int[lLen + rLen];
+//        int k = 0;
+//
+//        for (int i = 0, j = 0; i < lLen && j < rLen;) {
+//
+//            if (leftArray[i] < rightArray[j]) {
+//                temp[k++] = leftArray[i];
+//                i++;
+//            } else {
+//                temp[k++] = leftArray[j];
+//                j++;
+//            }
+//        }
+//        return null;
+//    }
 }
